@@ -1,0 +1,26 @@
+body {
+    background-color: #333; /* Dark gray background */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 100px; /* Space from the top */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff9900; /* Orange button background */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6600; /* Orange button background on hover */
+}
