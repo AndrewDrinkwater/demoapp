@@ -1,6 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #00008b, #00008b 20%, #87cefa 20%, #87cefa);
-    background-size: 100% 20%; /* Adjust the size to control the smoothness */
+    background: repeating-linear-gradient(to bottom, #00008b, #00008b 50px, #87cefa 50px, #87cefa 100px);
     color: white; /* Text color */
     font-family: Arial, sans-serif;
     text-align: center;
