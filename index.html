@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello, World Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000066, #000099); /* Dark blue gradient */
+            font-family: Arial, sans-serif; /* Optional: Set a different font */
+        }
+        .container {
+            text-align: center;
+            padding: 100px;
+            color: white; /* Optional: Set text color */
+        }
+        h1 {
+            font-size: 2em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff9900; /* Orange button background */
+            color: white; /* Button text color */
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff6600; /* Orange button background on hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <button id="helloButton">Click me</button>
-
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <button id="helloButton">Click me</button>
+    </div>
     <script>
         // JavaScript code to handle button click
         const button = document.getElementById("helloButton");
