@@ -5,19 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Cool Website</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Apply the rainbow animation to the h1 element */
+        h1 {
+            font-size: 2em;
+            animation: rainbow 5s infinite linear;
+            background-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* Define the rainbow animation keyframes */
+        @keyframes rainbow {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+    </style>
+    <title>Rainbow Text</title>
 </head>
 <body>
     <header>
         <h1>Welcome to the AMAZING Website!</h1>
     </header>
+</body>
+</html>
+
     
-    <div class="container">
-        <section class="info">
-            <h2>About Us</h2>
-            <p>
-                We're on a mission to make the web a cooler place. Our team of creative minds works tirelessly to bring you exciting experiences and innovative web solutions.
-            </p>
-        </section>
+  <div class="container">
+    <section class="info">
+        <h2 style="color: white;">About Alice</h2>
+        <p style="color: white;">
+            Alice is 5 years old and was born on the 10th of January 2018. She has two sisters called Emily and Lily and a dog called Duke.
+        </p>
+    </section>
+</div>
+
         
         <section class="buttons">
             <h2>Check These Out</h2>
