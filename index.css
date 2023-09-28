@@ -1,5 +1,5 @@
 body {
-    background-color: #333; /* Dark gray background */
+    background: linear-gradient(to bottom, #00008b, #87cefa); /* Dark blue to light blue gradient */
     color: white; /* Text color */
     font-family: Arial, sans-serif;
     text-align: center;
