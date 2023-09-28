@@ -6,59 +6,61 @@
 
 /* Apply background gradient to the entire body */
 body {
-    background: linear-gradient(to bottom, #00008b, #87cefa); /* Dark blue to light blue gradient */
-    color: white; /* Text color */
+    background: linear-gradient(to bottom, #00bfff, #87cefa); /* Light blue gradient */
     font-family: Arial, sans-serif;
-    min-height: 100vh; /* Ensure the gradient covers the entire viewport height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Header Styles */
 header {
     background-color: #00008b; /* Dark blue background for the header */
-    text-align: center;
-    padding: 20px 0; /* Add padding to the header */
-}
-
-header h1 {
-    font-size: 1.5em; /* Increase font size for the title */
     color: white; /* Title text color */
+    padding: 40px 0; /* Increased padding for the header */
 }
 
-/* Weather Widget Styles */
-.weather-widget {
-    text-align: center; /* Center-align the weather widget */
-    padding: 20px 0; /* Add spacing above the weather widget */
-}
-
-/* Three Column Layout */
+/* Container Styles */
 .container {
     display: flex;
-    justify-content: space-between; /* Space evenly between columns */
-    margin: 20px; /* Add margin to the container */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Increased gap between sections */
+    max-width: 1200px; /* Wider container */
+    margin-top: 40px; /* Increased margin from the top */
 }
 
-.column {
-    flex-basis: calc(33.33% - 20px); /* Calculate column width */
-    padding: 20px; /* Add padding to columns */
-    background-color: rgba(255, 255, 255, 0.1); /* Light gray background for columns */
-    border-radius: 5px; /* Add border radius to columns */
-    margin-right: 20px; /* Add margin between columns */
+/* Section Styles */
+section {
+    flex-basis: calc(33.33% - 40px); /* Calculate column width with increased gap */
+    padding: 40px; /* Increased padding for sections */
+    background-color: rgba(255, 255, 255, 0.1); /* Light gray background */
+    border-radius: 10px; /* Increased border radius */
 }
 
 /* Button Styles */
 button {
-    width: 100%; /* Make buttons fill the column width */
-    padding: 10px 0; /* Add vertical padding to buttons */
-    font-size: 1.2em;
+    width: 100%;
+    padding: 20px 0; /* Larger padding for buttons */
+    font-size: 1.5em; /* Larger font size for buttons */
     background-color: #ff9900; /* Orange button background */
-    color: white; /* Button text color */
+    color: white;
     border: none;
     cursor: pointer;
-    margin-top: 10px; /* Add margin to separate buttons */
+    margin-top: 20px; /* Increased margin to separate buttons */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 button:hover {
     background-color: #ff6600; /* Orange button background on hover */
+}
+
+/* JavaScript Result Styles */
+.result {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 40px; /* Increased margin from the top */
 }
