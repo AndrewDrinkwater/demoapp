@@ -33,13 +33,17 @@ h1 {
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 20px 40px; /* Increase padding to make buttons larger */
+    font-size: 1.5em; /* Increase font size for larger text */
     background-color: #ff9900;
     color: white;
     border: none;
     cursor: pointer;
+    margin: 10px 0; /* Add margin to separate buttons vertically */
+    display: block; /* Set display to block to force one button per row */
+    width: 100%; /* Set width to 100% to occupy the entire column width */
 }
+
 
 button:hover {
     background-color: #ff6600;
