@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // JavaScript code to handle button click
 
-    // Function to perform an action when the "Insult me" button is clicked
+    // Function to perform an action when the "Insult me" button is clicked.
     document.getElementById("insultButton").addEventListener("click", () => {
         alert("You're a JavaScript wizard!");
     });
