@@ -1,0 +1,23 @@
+trigger:
+- main  # Replace with the branch you want to trigger deployments from (e.g., main, master).
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: npm install  # Install any dependencies your web app may have.
+  displayName: 'Install Dependencies'
+
+- script: npm run build  # Build your static web app (adjust the build command as needed).
+  displayName: 'Build Web App'
+
+- task: AzureStaticWebApp@0
+  inputs:
+    app_location: '/'  # Path to the build artifacts (usually the root directory).
+    api_location: ''    # Path to API code (leave empty for static web apps).
+    output_location: 'build'  # Output location of your built files.
+    azure_static_web_apps_api_token: $(AzureStaticWebAppsApiToken)  # Define this variable in your pipeline.
+
+- script: echo Deployment complete!
+  displayName: 'Deployment Complete'
+
