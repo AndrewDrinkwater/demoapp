@@ -3,46 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Hello, World Page</title>
-    <script src="ButtonActions.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Cool Website</title>
 </head>
 <body>
-    <!-- Weather Widget Section -->
     <header>
-        <div class="weather-widget">
-            <iframe src="weather.html" frameborder="0" scrolling="no"></iframe>
-        </div>
-        <h1>Welcome to the Demo App</h1>
+        <h1>Welcome to the Cool Website!</h1>
     </header>
-
-    <!-- Three Column Sections -->
+    
     <div class="container">
-        <div class="column">
-            <h2>About the Demo App</h2>
+        <section class="info">
+            <h2>About Us</h2>
             <p>
-                This is a ServiceNow integration demonstration showcasing the use of various technologies.
+                We're on a mission to make the web a cooler place. Our team of creative minds works tirelessly to bring you exciting experiences and innovative web solutions.
             </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-            </p>
-        </div>
-
-        <div class="column">
-            <!-- Middle Column with Placeholder Buttons -->
-            <h2>Actions</h2>
-            <button id="insultButton">Insult me</button>
-            <button id="openGoogleButton">Open Google</button>
-            <button id="invertButton">Invert</button>
-            <button id="goSmallButton">Go Small</button>
-            <button id="goBigButton">Go Big</button>
-        </div>
-
-        <div class="column">
-            <!-- Right Column with Placeholder -->
-            <h2>Placeholder</h2>
-            <p>Placeholder content goes here.</p>
-        </div>
+        </section>
+        
+        <section class="buttons">
+            <h2>Check These Out</h2>
+            <button id="coolButton">Hover Me</button>
+            <button id="openLinkButton">Open Link</button>
+            <button id="showInfoButton">Show Info</button>
+        </section>
+        
+        <section class="result">
+            <h2>Result</h2>
+            <p id="resultText">Hover over a button for something cool!</p>
+        </section>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
