@@ -6,7 +6,7 @@
 
 /* Apply background gradient to the entire body */
 body {
-    background: linear-gradient(to bottom, #00bfff, #87cefa); /* Light blue gradient */
+    background: linear-gradient(to bottom, #00008b, #87cefa); /* Dark blue to light blue gradient */
     font-family: Arial, sans-serif;
     min-height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #00008b; /* Dark blue background for the header */
+    /* Remove the dark blue title box */
     color: white; /* Title text color */
     padding: 40px 0; /* Increased padding for the header */
 }
