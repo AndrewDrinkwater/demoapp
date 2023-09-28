@@ -51,11 +51,19 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 20px; /* Increased margin to separate buttons */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px; /* Slightly rounded corners for buttons */
 }
 
 button:hover {
-    background-color: #ff6600; /* Orange button background on hover */
+    background-color: #cc7700; /* Darker orange button background on hover */
+    color: #fff; /* White text color on hover */
+    transform: translateY(-3px); /* Add a slight upward lift on hover */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.5) 10%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: 0 100%;
+    transition: background-image 0.3s ease;
+    text-decoration: underline; /* White underline on hover */
 }
 
 /* JavaScript Result Styles */
