@@ -60,29 +60,12 @@ button {
     position: relative; /* Add position relative for pseudo-element */
 }
 
-button::before {
-    content: ""; /* Create a pseudo-element for the underline */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px; /* Underline height */
-    background-color: white;
-    transform: scaleX(0); /* Initial width of 0 */
-    transform-origin: left center;
-    transition: transform 0.3s ease; /* Transition effect for underline */
-}
-
 button:hover {
     background-color: #cc7700; /* Darker orange button background on hover */
     color: #fff; /* White text color on hover */
     transform: translateY(-3px); /* Add a slight upward lift on hover */
     background-size: 120% 120%; /* Increase the gradient size */
-    text-decoration: none; /* Remove default underline on hover */
-}
-
-button:hover::before {
-    transform: scaleX(1); /* Expand the underline from left to right on hover */
+    text-decoration: underline; /* Underline the text on hover */
 }
 
 /* JavaScript Result Styles */
