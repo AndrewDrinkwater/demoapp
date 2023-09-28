@@ -65,11 +65,12 @@ button::before {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0; /* Initial width of 0 */
+    width: 100%; /* Full width initially */
     height: 2px; /* Underline height */
     background-color: white;
     transform-origin: left center;
-    transition: width 0.3s ease; /* Transition effect for underline width */
+    transition: transform 0.3s ease, width 0.3s ease; /* Transition effect for underline width and position */
+    transform: scaleX(0); /* Initial width of 0 */
 }
 
 button:hover {
@@ -81,8 +82,9 @@ button:hover {
 }
 
 button:hover::before {
-    width: 100%; /* Expand the underline from left to right on hover */
+    transform: scaleX(1); /* Expand the underline from left to right on hover */
 }
+
 /* JavaScript Result Styles */
 .result {
     flex-basis: 100%;
