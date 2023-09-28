@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to bottom, #00008b, #87cefa); /* Dark blue to light blue gradient */
+    background: linear-gradient(to bottom, #00008b, #00008b 20%, #87cefa 20%, #87cefa);
+    background-size: 100% 20%; /* Adjust the size to control the smoothness */
     color: white; /* Text color */
     font-family: Arial, sans-serif;
     text-align: center;
