@@ -1,10 +1,11 @@
 body {
-    background: repeating-linear-gradient(to bottom, #00008b, #00008b 50px, #87cefa 50px, #87cefa 100px);
+    background: linear-gradient(to bottom, #00008b, #87cefa); /* Dark blue to light blue gradient */
     color: white; /* Text color */
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
+    min-height: 100vh; /* Ensure the gradient covers the entire viewport height */
 }
 
 h1 {
