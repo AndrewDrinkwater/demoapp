@@ -32,6 +32,8 @@ h1 {
     text-align: left;
 }
 
+/*button managment */
+
 button {
     padding: 20px 40px; /* Increase padding to make buttons larger */
     font-size: 1.5em; /* Increase font size for larger text */
