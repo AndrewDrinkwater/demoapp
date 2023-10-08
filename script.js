@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // JavaScript code to handle button click and hover effects
+    // New
 
     const coolButton = document.getElementById("coolButton");
     const openLinkButton = document.getElementById("openLinkButton");
