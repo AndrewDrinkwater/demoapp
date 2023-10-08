@@ -5,8 +5,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: npm install  # Install any dependencies your web app may have.
-  displayName: 'Install Dependencies'
 
 - script: npm run build  # Build your static web app (adjust the build command as needed).
   displayName: 'Build Web App'
